@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio 02 - Formularios en HTML</title>
+  </head>
+  <body>
+    <h4>FORMULARIO:</h4>
+    <br />
+    <!-- CREACIÓN DEL FORMULARIO CON LAS CARACTERISTICAS
+    ESPECIFICADAS DE  NOMBRE, EDAD, Y FRASE FAVORITA
+    CON LA ADICCION DE BONES DE ACCIONES 
+    DE ENVIO Y RESETEO DE INFORMACIÓN -->
+    <form action="/" method="get">
+      <label for="ingresenombre"> Nombre: </label>
+      <input type="text" name="ingresenombre" id="ingresenombre" required />
+      <div>
+        <br />
+        <label for="ingresedad"> Edad: </label>
+        <input
+          type="number"
+          name="ingresedad"
+          id="ingresedad"
+          min="0"
+          max="150"
+          requiredS
+        />
+      </div>
+      <br />
+      <label for="frase-favorita"> Frase favorita: </label>
+      <div>
+        <textarea
+          name="frase-favorita"
+          id="frase-favorita"
+          minlength="30"
+          maxlength="100"
+        >
+        </textarea>
+      </div>
+      <div>
+        <br />
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
